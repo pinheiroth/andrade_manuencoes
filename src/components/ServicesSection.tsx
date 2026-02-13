@@ -1,36 +1,44 @@
 import { motion } from "framer-motion";
-import { Paintbrush, Layers, Zap, Monitor, Wind, Wrench } from "lucide-react";
+import { Paintbrush, Layers, Zap, Monitor, Wind, Wrench, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const services = [
   {
     icon: Paintbrush,
     title: "Pintura",
     description: "Pintura residencial e comercial com acabamento impecável e tintas de alta qualidade.",
+    slug: "pintura",
   },
   {
     icon: Layers,
     title: "Drywall",
     description: "Instalação de paredes, forros e divisórias em drywall com precisão e agilidade.",
+    slug: "drywall",
   },
   {
     icon: Zap,
     title: "Elétrica",
     description: "Instalações e manutenções elétricas seguindo todas as normas de segurança.",
+    slug: "eletrica",
   },
   {
     icon: Monitor,
     title: "Eletrônica",
     description: "Instalação de sistemas eletrônicos, automação e infraestrutura tecnológica.",
+    slug: "eletronica",
   },
   {
     icon: Wind,
     title: "Ar Condicionado",
     description: "Instalação, manutenção preventiva e corretiva de sistemas de climatização.",
+    slug: "arcondicionado",
   },
   {
     icon: Wrench,
     title: "Manutenção Geral",
     description: "Serviços diversos de manutenção predial e residencial com equipe qualificada.",
+    slug: "manutencao",
   },
 ];
 
@@ -80,12 +88,26 @@ const ServicesSection = () => {
               <h3 className="font-heading text-xl font-semibold text-foreground mb-3">
                 {service.title}
               </h3>
-              <p className="font-body text-muted-foreground leading-relaxed">
+              <p className="font-body text-muted-foreground leading-relaxed mb-5">
                 {service.description}
               </p>
+              <Button variant="ghost" size="sm" className="gap-2 text-primary hover:text-primary p-0" asChild>
+                <Link to={`/servicos#${service.slug}`}>
+                  Saiba mais <ArrowRight className="h-4 w-4" />
+                </Link>
+              </Button>
             </motion.div>
           ))}
         </motion.div>
+
+        <div className="text-center mt-12">
+          <Button size="lg" className="gap-2 text-base font-semibold px-8" asChild>
+            <Link to="/servicos">
+              Ver Todos os Serviços
+              <ArrowRight className="h-5 w-5" />
+            </Link>
+          </Button>
+        </div>
       </div>
     </section>
   );
