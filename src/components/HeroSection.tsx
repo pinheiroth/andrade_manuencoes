@@ -28,8 +28,8 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-2xl"
         >
-          <span className="inline-block px-4 py-1.5 mb-6 rounded-full bg-primary/20 text-primary font-body text-sm font-semibold tracking-wide border border-primary/30">
-            Reformas e Manutenções Andrade
+          <span className="inline-block cursor-pointer hover:bg-white/30 px-4 py-1.5 mb-6 rounded-full bg-primary/20 text-primary font-body text-sm font-semibold tracking-wide border border-primary/30">
+           Andrade Reformas e Manutenções 
           </span>
 
           <h1 className="font-heading text-4xl md:text-6xl font-bold text-accent-foreground leading-tight mb-6">
@@ -37,7 +37,7 @@ const HeroSection = () => {
             <span className="text-primary">espaços</span> com qualidade e profissionalismo
           </h1>
 
-          <p className="font-body text-lg md:text-xl text-accent-foreground/80 mb-8 max-w-lg">
+          <p className="font-body text-lg md:text-xl text-accent-foreground/60 mb-8 max-w-lg">
             Pintura, drywall, elétrica, eletrônica, ar condicionado e muito mais. 
             Sua reforma completa em um só lugar.
           </p>
@@ -50,7 +50,7 @@ const HeroSection = () => {
             <Button
               variant="outline"
               size="lg"
-              className="text-base font-semibold px-8 border-accent-foreground/30 text-accent-foreground hover:bg-accent-foreground/10"
+              className="text-base font-semibold bg-accent-foreground/10 px-8 border-accent-foreground/30 text-accent-foreground hover:bg-accent-foreground/30"
               asChild
             >
               <Link to="/servicos">

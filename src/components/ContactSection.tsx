@@ -38,7 +38,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-body text-sm text-accent-foreground/70">Telefone</p>
-                    <p className="font-body font-semibold">(11) 99999-9999</p>
+                    <p className="font-body font-semibold">(**) *****-****</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -47,7 +47,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-body text-sm text-accent-foreground/70">Email</p>
-                    <p className="font-body font-semibold">contato@reformapro.com.br</p>
+                    <p className="font-body font-semibold">*********@gmail.com.br</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -56,14 +56,13 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-body text-sm text-accent-foreground/70">Endereço</p>
-                    <p className="font-body font-semibold">São Paulo, SP</p>
+                    <p className="font-body font-semibold">*******, **</p>
                   </div>
                 </div>
               </div>
             </div>
           </motion.div>
 
-          {/* Form */}
           <motion.form
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -11,7 +11,7 @@ import imgDrywall from "@/assets/service-drywall.jpg";
 import imgEletrica from "@/assets/service-eletrica.jpg";
 import imgEletronica from "@/assets/service-eletronica.jpg";
 import imgArcondicionado from "@/assets/service-arcondicionado.jpg";
-import imgManutencao from "@/assets/service-manutencao.jpg";
+import imgManutencao from "@/assets/manutencao.jpg";
 
 const servicesData = [
   {
@@ -259,7 +259,7 @@ const ServicosPage = () => {
                 Solicitar Orçamento Grátis
               </a>
             </Button>
-            <Button variant="outline" size="lg" className="gap-2 text-base font-semibold px-8 border-accent-foreground/30 text-accent-foreground hover:bg-accent-foreground/10" asChild>
+            <Button variant="outline" size="lg" className="gap-2 text-base font-semibold bg-accent-foreground/10 px-8 border-accent-foreground/30 text-accent-foreground hover:bg-accent-foreground/30" asChild>
               <Link to="/">
                 Voltar ao Início
               </Link>
